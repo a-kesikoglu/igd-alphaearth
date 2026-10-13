@@ -1,0 +1,10 @@
+# Results audit
+
+- **Sample selection** (Earth Engine, `reports/selection_audit.csv`): 63,287 catalogue polygons → 11,508 in Spain and Greece → 10,890 screened → 10,859 in groups B to F → 10,144 with area ≥ 400 m² (Spain 8,359; Greece 1,785).
+- **Feature quality** (`reports/dataset_audit.md`): no missing values in any feature set; 3 to 77 grid cell centres per polygon (median 43); in every quarter the whole area of every polygon had at least one clear Sentinel-2 observation; every polygon had at least 6 ascending and 11 descending Sentinel-1 observations per quarter.
+- **Extraction grid:** `reduceRegions` with a mean reducer at 10 m nominal scale in EPSG:4326; cells take the native pixel value (nearest neighbour) and are weighted by the fraction of their area inside the polygon (example: polygon 22543, 20 cell centres, summed weights 20.47).
+- **Splits** (`data/splits/manifest.json`, SHA-256): Spanish training pool 6,129, locked test 2,049 (62 of 248 blocks of 50 km), buffer excluded 181, Greece 1,785. Block disjointness is asserted in code; minimum training to test distance 5.65 km.
+- **Runs:** budgets 10, 25, 50, 100 × 20 draws and the full pool × 5 seeds; Random Forest and logistic regression; eight feature sets; two test sets (1,360 runs, 5.2 million predictions in `outputs/metrics/predictions_long.parquet`). Validation sensitivity analysis: 5 protocols × 10 repetitions × 2 budgets × 5 feature sets.
+- **Determinism:** all runs use fixed seeds; repeated execution reproduces every reported mean score exactly.
+- **Uncertainty:** two-level cluster bootstrap (2,000 draws) over test blocks and training draws (columns `ci2_lo`, `ci2_hi`); intervals with fixed training draws are archived as `ci_lo`, `ci_hi` and are on average about 25% narrower. The two variants agree for every comparison between AE and the Sentinel baselines at equal budgets.
+- **Text check:** every three-decimal number in the paper is found in `outputs/**/*.csv`, except 0.859 (quoted from Manikandan et al., 2026) and 0.991 (median norm of the polygon mean embedding, `reports/dataset_audit.md`).

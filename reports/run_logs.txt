@@ -1,0 +1,203 @@
+===== export_log.txt =====
+reference polygons: 18992 {('EL', 'B'): 698, ('EL', 'C'): 588, ('EL', 'D'): 248, ('EL', 'E'): 803, ('EL', 'F'): 73, ('ES', 'B'): 6768, ('ES', 'C'): 3305, ('ES', 'D'): 2273, ('ES', 'E'): 3021, ('ES', 'F'): 1215}
+{
+  "created_utc": "2026-10-13T14:08:13.869459+00:00",
+  "ee_api": "1.7.46",
+  "year": 2018,
+  "reference_asset": "JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018",
+  "n_reference": 18992,
+  "n_features": 10163,
+  "ae_asset": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+  "ae_tiles_used": 180,
+  "s2_asset": "COPERNICUS/S2_SR_HARMONIZED",
+  "cloud_mask": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED cs_cdf>=0.6",
+  "reducer": "polygon mean at 10 m",
+  "sha256_features": "5538c06bb6cce0631a9c05d1057d7c9ac0a1f1393053171e264cedb22de91a23"
+}
+/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED cs_cdf>=0.6",
+  "reducer": "polygon mean at 10 m",
+  "sha256_features": "e2c7cea2fb50a4f0ebf3d4a6745ee3eb9b4cc054746caf6cd152bd79ff66bd68"
+}
+
+===== qc_s1_log.txt =====
+   quarter       orbit  scenes
+0        1   ASCENDING    2014
+1        1  DESCENDING    2026
+2        2   ASCENDING    1876
+3        2  DESCENDING    1992
+4        3   ASCENDING    2724
+5        3  DESCENDING    2889
+6        4   ASCENDING    3121
+7        4  DESCENDING    3321
+10144
+               count        mean         std        min        25%         50%         75%         max
+S1Aq1_VH     10144.0     -18.850       2.917    -28.015    -20.928     -18.992     -16.876      -4.252
+S1Aq1_VV     10144.0     -11.149       2.115    -19.813    -12.498     -11.348     -10.051       2.195
+S1Aq2_VH     10144.0     -18.127       2.419    -30.522    -19.768     -18.385     -16.621      -4.258
+S1Aq2_VV     10144.0     -11.530       2.186    -21.948    -12.983     -11.736     -10.332       2.119
+S1Aq3_VH     10144.0     -18.944       3.498    -31.829    -21.019     -18.539     -16.584      -4.511
+S1Aq3_VV     10144.0     -11.775       2.520    -19.896    -13.360     -11.797     -10.289       3.461
+S1Aq4_VH     10144.0     -19.099       2.930    -29.926    -21.052     -19.106     -17.140      -5.377
+S1Aq4_VV     10144.0     -11.258       2.149    -18.203    -12.649     -11.380     -10.065       3.083
+S1Dq1_VH     10144.0     -19.152       2.838    -29.294    -21.158     -19.278     -17.336      -6.647
+S1Dq1_VV     10144.0     -11.577       2.193    -20.456    -12.985     -11.729     -10.372       2.652
+S1Dq2_VH     10144.0     -18.225       2.294    -30.639    -19.780     -18.459     -16.907      -6.726
+S1Dq2_VV     10144.0     -11.655       2.144    -21.803    -13.119     -11.832     -10.453       0.477
+S1Dq3_VH     10144.0     -19.187       3.395    -32.498    -21.220     -18.875     -16.875      -4.347
+S1Dq3_VV     10144.0     -11.934       2.529    -20.901    -13.583     -11.933     -10.410       0.292
+S1Dq4_VH     10144.0     -18.897       2.673    -29.794    -20.689     -18.924     -17.212      -6.998
+S1Dq4_VV     10144.0     -11.295       2.153    -20.448    -12.724     -11.379      -9.980       0.192
+clear_q1     10144.0       1.000       0.000      1.000      1.000       1.000       1.000       1.000
+clear_q2     10144.0       1.000       0.000      1.000      1.000       1.000       1.000       1.000
+clear_q3     10144.0       1.000       0.000      1.000      1.000       1.000       1.000       1.000
+clear_q4     10144.0       1.000       0.000      1.000      1.000       1.000       1.000       1.000
+id           10144.0  217303.202  140723.431  22543.000  95944.250  163073.500  354798.000  438280.000
+s1n_asc_q1   10144.0      21.970       7.410     11.859     15.000      15.000      30.000      30.000
+s1n_asc_q2   10144.0      19.417       7.442      7.000     14.000      16.000      29.000      31.000
+s1n_asc_q3   10144.0      32.639      12.904      7.000     25.000      27.000      50.000      52.000
+s1n_asc_q4   10144.0      39.739      16.347      6.000     30.000      32.000      60.000      64.000
+s1n_desc_q1  10144.0      21.977       7.280     12.406     15.000      23.000      29.000      30.000
+s1n_desc_q2  10144.0      21.625       7.339     11.000     15.000      16.000      29.000      31.000
+s1n_desc_q3  10144.0      35.954      12.342     13.000     25.000      25.000      50.000      50.000
+s1n_desc_q4  10144.0      44.182      15.475     14.000     30.000      32.000      60.000      62.000
+
+===== experiment_log.txt =====
+{
+  "holdout_attempt": 1,
+  "n_blocks": 248,
+  "n_test_blocks": 62,
+  "n_test": 2049,
+  "n_pool_before_buffer": 6310,
+  "n_pool": 6129,
+  "removed_by_buffer": 181,
+  "min_train_test_distance_km": 5.654586788395966,
+  "test_class_counts": {
+    "Cropland": 749,
+    "Woodland": 485,
+    "Shrubland": 305,
+    "Grassland": 376,
+    "Bare land": 134
+  },
+  "pool_class_counts": {
+    "Cropland": 2226,
+    "Woodland": 1371,
+    "Shrubland": 951,
+    "Grassland": 1131,
+    "Bare land": 450
+  },
+  "greece_class_counts": {
+    "Cropland": 511,
+    "Woodland": 468,
+    "Shrubland": 205,
+    "Grassland": 545,
+    "Bare land": 56
+  }
+}
+E1 budget 10 done, 78s
+E1 budget 25 done, 156s
+E1 budget 50 done, 235s
+E1 budget 100 done, 320s
+E1 budget all done, 383s
+E2 L=0 km done, 425s
+E2 L=10 km done, 467s
+E2 L=25 km done, 508s
+E2 L=50 km done, 550s
+E2 L=100 km done, 593s
+finished 593.0784480571747
+
+===== stats_log.txt =====
+            test model budget        a               b  delta_mean  delta_sd_rep  share_reps_positive  ci_lo  ci_hi  ci2_lo  ci2_hi
+0     ES_holdout    RF     10       AE     S2-seasonal       0.068         0.025                 1.00  0.054  0.083   0.051   0.088
+1     ES_holdout    RF     10       AE       S2-annual       0.087         0.030                 1.00  0.068  0.104   0.064   0.110
+4     ES_holdout    RF     10       AE  S1+S2-seasonal       0.054         0.019                 1.00  0.041  0.067   0.038   0.072
+6     ES_holdout    RF     10  AE-unit              AE       0.001         0.004                 0.55 -0.001  0.002  -0.002   0.004
+9     ES_holdout    RF     25       AE     S2-seasonal       0.072         0.015                 1.00  0.059  0.086   0.057   0.089
+10    ES_holdout    RF     25       AE       S2-annual       0.105         0.021                 1.00  0.083  0.124   0.082   0.127
+13    ES_holdout    RF     25       AE  S1+S2-seasonal       0.063         0.016                 1.00  0.050  0.076   0.048   0.079
+15    ES_holdout    RF     25  AE-unit              AE      -0.000         0.004                 0.45 -0.002  0.002  -0.004   0.003
+18    ES_holdout    RF     50       AE     S2-seasonal       0.069         0.020                 1.00  0.054  0.084   0.051   0.087
+19    ES_holdout    RF     50       AE       S2-annual       0.104         0.020                 1.00  0.082  0.122   0.080   0.125
+22    ES_holdout    RF     50       AE  S1+S2-seasonal       0.058         0.016                 1.00  0.045  0.072   0.042   0.075
+24    ES_holdout    RF     50  AE-unit              AE      -0.001         0.005                 0.40 -0.003  0.001  -0.004   0.003
+27    ES_holdout    RF    100       AE     S2-seasonal       0.066         0.009                 1.00  0.050  0.083   0.049   0.084
+28    ES_holdout    RF    100       AE       S2-annual       0.100         0.012                 1.00  0.078  0.121   0.077   0.122
+31    ES_holdout    RF    100       AE  S1+S2-seasonal       0.055         0.008                 1.00  0.041  0.071   0.040   0.071
+33    ES_holdout    RF    100  AE-unit              AE      -0.002         0.004                 0.35 -0.004  0.001  -0.005   0.002
+36    ES_holdout    RF    all       AE     S2-seasonal       0.043         0.006                 1.00  0.018  0.070   0.018   0.071
+37    ES_holdout    RF    all       AE       S2-annual       0.082         0.005                 1.00  0.056  0.108   0.056   0.108
+40    ES_holdout    RF    all       AE  S1+S2-seasonal       0.029         0.005                 1.00  0.003  0.057   0.003   0.057
+42    ES_holdout    RF    all  AE-unit              AE      -0.001         0.004                 0.40 -0.005  0.004  -0.008   0.007
+90   EL_transfer    RF     10       AE     S2-seasonal       0.091         0.033                 1.00  0.062  0.116   0.060   0.120
+91   EL_transfer    RF     10       AE       S2-annual       0.108         0.049                 1.00  0.078  0.134   0.071   0.142
+94   EL_transfer    RF     10       AE  S1+S2-seasonal       0.081         0.038                 1.00  0.055  0.104   0.052   0.108
+96   EL_transfer    RF     10  AE-unit              AE       0.001         0.008                 0.60 -0.001  0.004  -0.003   0.006
+99   EL_transfer    RF     25       AE     S2-seasonal       0.086         0.036                 1.00  0.056  0.111   0.052   0.117
+100  EL_transfer    RF     25       AE       S2-annual       0.116         0.038                 1.00  0.082  0.147   0.079   0.153
+103  EL_transfer    RF     25       AE  S1+S2-seasonal       0.073         0.037                 1.00  0.046  0.096   0.043   0.103
+105  EL_transfer    RF     25  AE-unit              AE       0.000         0.005                 0.45 -0.003  0.003  -0.005   0.005
+108  EL_transfer    RF     50       AE     S2-seasonal       0.079         0.023                 1.00  0.049  0.105   0.047   0.108
+109  EL_transfer    RF     50       AE       S2-annual       0.115         0.027                 1.00  0.080  0.147   0.078   0.150
+112  EL_transfer    RF     50       AE  S1+S2-seasonal       0.061         0.024                 1.00  0.035  0.084   0.032   0.088
+114  EL_transfer    RF     50  AE-unit              AE       0.001         0.007                 0.55 -0.002  0.004  -0.005   0.007
+117  EL_transfer    RF    100       AE     S2-seasonal       0.083         0.022                 1.00  0.052  0.110   0.050   0.113
+118  EL_transfer    RF    100       AE       S2-annual       0.127         0.021                 1.00  0.090  0.161   0.089   0.163
+121  EL_transfer    RF    100       AE  S1+S2-seasonal       0.070         0.022                 1.00  0.043  0.095   0.040   0.098
+123  EL_transfer    RF    100  AE-unit              AE      -0.002         0.010                 0.45 -0.005  0.002  -0.009   0.005
+126  EL_transfer    RF    all       AE     S2-seasonal       0.021         0.003                 1.00 -0.005  0.046  -0.006   0.047
+127  EL_transfer    RF    all       AE       S2-annual       0.105         0.003                 1.00  0.067  0.141   0.067   0.142
+130  EL_transfer    RF    all       AE  S1+S2-seasonal       0.018         0.008                 1.00 -0.007  0.040  -0.008   0.042
+132  EL_transfer    RF    all  AE-unit              AE      -0.001         0.004                 0.20 -0.005  0.003  -0.007   0.005
+          test model      a                   b  delta  ci_lo  ci_hi  p_boot_le0  ci2_lo  ci2_hi
+0   ES_holdout    RF  AE@25     S2-seasonal@100  0.024  0.009  0.039       0.001   0.007   0.041
+1   ES_holdout    LR  AE@25     S2-seasonal@100  0.007 -0.009  0.025       0.194  -0.012   0.028
+2   ES_holdout    RF  AE@25  S1+S2-seasonal@100  0.013  0.000  0.027       0.024  -0.003   0.029
+3   ES_holdout    LR  AE@25  S1+S2-seasonal@100 -0.007 -0.022  0.009       0.823  -0.026   0.013
+4   ES_holdout    RF  AE@10      S2-seasonal@50 -0.008 -0.021  0.006       0.874  -0.027   0.010
+5   ES_holdout    LR  AE@10      S2-seasonal@50 -0.016 -0.029 -0.001       0.982  -0.040   0.006
+6  EL_transfer    RF  AE@10     S2-seasonal@100  0.020 -0.007  0.043       0.060  -0.009   0.047
+7  EL_transfer    LR  AE@10     S2-seasonal@100 -0.011 -0.036  0.014       0.778  -0.042   0.020
+8  EL_transfer    RF  AE@25  S1+S2-seasonal@100  0.026  0.002  0.048       0.018  -0.002   0.052
+9  EL_transfer    LR  AE@25  S1+S2-seasonal@100  0.005 -0.017  0.026       0.310  -0.023   0.032
+           test budget      class  support  f1_s2s  f1_ae  ci_lo  ci_hi  ci2_lo  ci2_hi  delta
+0    ES_holdout     25   Cropland      749   0.609  0.706  0.071  0.127   0.067   0.131  0.097
+1    ES_holdout     25   Woodland      485   0.700  0.740  0.018  0.064   0.014   0.066  0.040
+2    ES_holdout     25  Shrubland      305   0.422  0.528  0.078  0.138   0.073   0.144  0.106
+3    ES_holdout     25  Grassland      376   0.444  0.531  0.057  0.113   0.054   0.119  0.087
+4    ES_holdout     25  Bare land      134   0.447  0.475 -0.005  0.070  -0.008   0.071  0.029
+5    ES_holdout    100   Cropland      749   0.679  0.738  0.029  0.092   0.026   0.093  0.059
+6    ES_holdout    100   Woodland      485   0.719  0.785  0.041  0.095   0.041   0.095  0.066
+7    ES_holdout    100  Shrubland      305   0.479  0.581  0.069  0.140   0.069   0.144  0.102
+8    ES_holdout    100  Grassland      376   0.487  0.577  0.057  0.122   0.055   0.124  0.090
+9    ES_holdout    100  Bare land      134   0.497  0.510 -0.025  0.053  -0.026   0.053  0.013
+10  EL_transfer     25   Cropland      511   0.236  0.502  0.194  0.325   0.186   0.338  0.266
+11  EL_transfer     25   Woodland      468   0.622  0.655 -0.003  0.070  -0.010   0.078  0.033
+12  EL_transfer     25  Shrubland      205   0.246  0.349  0.069  0.135   0.061   0.143  0.103
+13  EL_transfer     25  Grassland      545   0.467  0.463 -0.044  0.033  -0.059   0.050 -0.004
+14  EL_transfer     25  Bare land       56   0.098  0.127 -0.031  0.087  -0.038   0.093  0.030
+15  EL_transfer    100   Cropland      511   0.296  0.519  0.152  0.280   0.146   0.283  0.223
+16  EL_transfer    100   Woodland      468   0.653  0.718  0.027  0.106   0.026   0.108  0.065
+17  EL_transfer    100  Shrubland      205   0.299  0.402  0.061  0.142   0.059   0.143  0.103
+18  EL_transfer    100  Grassland      545   0.526  0.518 -0.049  0.032  -0.056   0.040 -0.008
+19  EL_transfer    100  Bare land       56   0.128  0.159 -0.036  0.096  -0.044   0.106  0.031
+    budget         repr  block_km  mf1_mean  mf1_sd   nn_km  n_test  n_pool
+0       25           AE         0     0.613   0.018   4.001  2090.0  6269.0
+1       25           AE        10     0.606   0.015   6.001  2085.0  6274.0
+2       25           AE        25     0.600   0.022   8.941  2115.5  6243.5
+3       25           AE        50     0.596   0.023  13.707  2107.5  6251.5
+4       25           AE       100     0.585   0.023  22.046  2103.0  6256.0
+20      25  S2-seasonal         0     0.524   0.015   4.001  2090.0  6269.0
+21      25  S2-seasonal        10     0.528   0.014   6.001  2085.0  6274.0
+22      25  S2-seasonal        25     0.525   0.024   8.941  2115.5  6243.5
+23      25  S2-seasonal        50     0.519   0.029  13.707  2107.5  6251.5
+24      25  S2-seasonal       100     0.502   0.025  22.046  2103.0  6256.0
+25     100           AE         0     0.655   0.013   4.001  2090.0  6269.0
+26     100           AE        10     0.653   0.009   6.001  2085.0  6274.0
+27     100           AE        25     0.649   0.014   8.941  2115.5  6243.5
+28     100           AE        50     0.648   0.017  13.707  2107.5  6251.5
+29     100           AE       100     0.632   0.021  22.046  2103.0  6256.0
+45     100  S2-seasonal         0     0.585   0.016   4.001  2090.0  6269.0
+46     100  S2-seasonal        10     0.588   0.015   6.001  2085.0  6274.0
+47     100  S2-seasonal        25     0.586   0.011   8.941  2115.5  6243.5
+48     100  S2-seasonal        50     0.578   0.021  13.707  2107.5  6251.5
+49     100  S2-seasonal       100     0.561   0.025  22.046  2103.0  6256.0
+

@@ -1,0 +1,24 @@
+{
+  "holdout_seed": 2018,
+  "block_km": 50,
+  "buffer_km": 5,
+  "grid": "EPSG:3035, origin (0, 0), block id = floor(x/L), floor(y/L)",
+  "files": {
+    "train_pool_spain_ids.csv": {
+      "n": 6129,
+      "sha256": "81238f623f01b5484eea6647b418e95e6590f1b7575d26f8c9411dcf8718d2ee"
+    },
+    "test_spain_ids.csv": {
+      "n": 2049,
+      "sha256": "4aac5ba2690b4d5865fb73b8fa0f1f334dac3bb475a406ed3ca585fa3f9a43cb"
+    },
+    "buffer_excluded_spain_ids.csv": {
+      "n": 181,
+      "sha256": "9ee1b7c09d9fff115aac3aed51a11f00697d20677bbf2bc881c4c1bfca88033d"
+    },
+    "test_greece_ids.csv": {
+      "n": 1785,
+      "sha256": "4ad890a0a8282b423ab2506d5ef69eccd20bda0b18254a27291e73c4cba70ddc"
+    }
+  }
+}

@@ -25,13 +25,14 @@ analyses, confusion matrices, Sentinel-1 scene counts, dissimilarity distributio
 | `config/config.yaml` | Frozen analysis settings |
 | `src/` | All scripts (see pipeline below) |
 | `data/raw/` | Reference table and polygon features extracted from Earth Engine; national boundaries (LSIB 2017) |
-| `data/processed/samples.parquet` | Analysis table (10,144 polygons × all features) |
+| `data/processed/samples.parquet` | Analysis table (10,144 polygons × all features); created by `src/02_prepare.py` when running `reproduce_all.py` |
 | `data/splits/` | Identifier lists of training pool, locked test, buffer zone and Greek test with SHA-256 manifest; 50 km block polygons (GeoJSON) |
 | `data/manifests/datasets.json` | Asset IDs, extraction date, reducer, checksum |
-| `outputs/metrics/` | Per run scores (`e1_runs.csv`, `e2_ladder.csv`), summaries, paired differences with intervals, per sample predictions (`predictions_long.parquet`) |
-| `outputs/tables/`, `outputs/figures/` | Paper tables (CSV) and figures (600 dpi PNG and vector PDF), extended tables and figures |
+| `outputs/metrics/` | Per run scores (`e1_runs.csv`, `e2_ladder.csv`), summaries, paired differences with intervals, per sample predictions of all 1,360 runs (`predictions_long.parquet`) |
+| `outputs/tables/tables.xlsx` | All paper and extended tables, one sheet per table (the scripts also write each table as CSV) |
+| `outputs/figures/` | Paper and extended figures as vector PDF (the scripts also write 600 dpi PNG) |
 | `docs/Extended_Results.pdf` | Extended results and processing details |
-| `reports/` | Selection audit, dataset audit, split audit, Sentinel-1 scene counts, DOI check, text audit, environment lock |
+| `reports/` | Selection audit, dataset audit, split audit, Sentinel-1 scene counts, DOI check, text audit, environment lock, merged run logs |
 | `manuscript/` | Source text (`manuscript.md`) and reference list used to build the paper |
 
 ## Reproduce
@@ -55,6 +56,7 @@ template and Microsoft Word; all other steps run on any platform.
 | Figures | `05_figures.py`, `05_figures_results.py`, `05b_workflow_figure.py` | `outputs/figures/` |
 | Predictions and extended results | `09_export_predictions.py`, `10_supplement.py` | `outputs/metrics/predictions_long.parquet`, `docs/Extended_Results.docx` |
 | Text audit | `08_quality_check.py` | `reports/manuscript_audit.md` |
+| Repository archive | `11_package.py` | compact archive with fewer than 100 files |
 
 ### Prediction table columns
 `run_id, test_set, sample_id, point_id, block_id, true_label, prediction, representation, classifier, budget, repetition, rf_seed, sampling_seed`

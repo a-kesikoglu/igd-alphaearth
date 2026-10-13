@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-13T14:11:39.264274+00:00",
+  "ee_api": "1.7.46",
+  "year": 2018,
+  "reference_asset": "JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018",
+  "n_reference": 10144,
+  "n_features": 10144,
+  "ae_asset": "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL",
+  "ae_tiles_used": 180,
+  "s2_asset": "COPERNICUS/S2_SR_HARMONIZED",
+  "cloud_mask": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED cs_cdf>=0.6",
+  "reducer": "polygon mean at 10 m",
+  "sha256_features": "feb7941821b5832c142a488ab778e144ebcd219ad18b047c6d4531242c7bbc4c",
+  "storage": "parquet, zstd level 19 (values identical to the extraction output)"
+}

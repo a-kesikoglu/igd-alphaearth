@@ -1,0 +1,45 @@
+key,status,crossref_title
+brown2025,ok (verified sequentially via Crossref/DataCite),<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] ce
+lu2025,ok (verified sequentially via Crossref/DataCite),Vision Foundation Models in Remote Sensing: A survey
+lacoste2023,ok (verified sequentially via Crossref/DataCite),GEO-Bench: Toward Foundation Models for Earth Monitoring
+marsocci2026,ok (verified sequentially via Crossref/DataCite),
+ryan2026,ok (verified sequentially via Crossref/DataCite),HTTP Error 403: Forbidden
+karim2026,ok (verified sequentially via Crossref/DataCite),AlphaEarth Foundations Provide Superior Accuracy in Vegetati
+rojas2026,ok (verified sequentially via Crossref/DataCite),
+manikandan2026,ok (verified sequentially via Crossref/DataCite),HTTP Error 403: Forbidden
+brown2022,ok (verified sequentially via Crossref/DataCite),"Dynamic World, Near real-time global 10 m land use land cove"
+zanaga2022,ok (verified sequentially via Crossref/DataCite),HTTP Error 403: Forbidden
+roberts2017,ok (verified sequentially via Crossref/DataCite),"Cross‐validation strategies for data with temporal, spatial,"
+ploton2020,ok (verified sequentially via Crossref/DataCite),
+meyer2022,ok (verified sequentially via Crossref/DataCite),
+kattenborn2022,ok (verified sequentially via Crossref/DataCite),Spatially autocorrelated training and validation samples inf
+karasiak2022,ok (verified sequentially via Crossref/DataCite),Spatial dependence between training and test sets: another p
+wadoux2021,ok (verified sequentially via Crossref/DataCite),
+linnenbrink2024,ok (verified sequentially via Crossref/DataCite),"kNNDM CV:
+                    <i>k</i>
+                    -"
+dandrimont2021,ok (verified sequentially via Crossref/DataCite),
+weigand2020,ok (verified sequentially via Crossref/DataCite),Spatial and semantic effects of LUCAS samples on fully autom
+venter2021,ok (verified sequentially via Crossref/DataCite),Continental-Scale Land Cover Mapping at 10 m Resolution Over
+olofsson2014,ok (verified sequentially via Crossref/DataCite),Good practices for estimating area and assessing accuracy of
+gorelick2017,ok (verified sequentially via Crossref/DataCite),Google Earth Engine: Planetary-scale geospatial analysis for
+drusch2012,ok (verified sequentially via Crossref/DataCite),Sentinel-2: ESA's Optical High-Resolution Mission for GMES O
+pasquarella2023,ok (verified sequentially via Crossref/DataCite),Comprehensive quality assessment of optical satellite imager
+breiman2001,ok (verified sequentially via Crossref/DataCite),Random Forests
+belgiu2016,ok (verified sequentially via Crossref/DataCite),Random forest in remote sensing: A review of applications an
+cox1958,ok (verified sequentially via Crossref/DataCite),HTTP Error 403: Forbidden
+pedregosa2011,no DOI (JMLR),
+sokolova2009,ok (verified sequentially via Crossref/DataCite),A systematic analysis of performance measures for classifica
+brodersen2010,ok (verified sequentially via Crossref/DataCite),The Balanced Accuracy and Its Posterior Distribution
+efron1979,ok (verified sequentially via Crossref/DataCite),
+valavi2019,ok (verified sequentially via Crossref/DataCite),"<scp>block</scp>
+                    <scp>CV</scp>
+         "
+theil1969,ok (verified sequentially via Crossref/DataCite),A Multinomial Extension of the Linear Logit Model
+torres2012,ok (verified sequentially via Crossref/DataCite),GMES Sentinel-1 mission
+meyer2021,ok (verified sequentially via Crossref/DataCite),Predicting into unknown space? Estimating the area of applic
+
+taskanat2026a,ok (verified sequentially via Crossref/DataCite),"Workflow-dependent variability in reservoir surface-water area estimates"
+atasever2026,ok (verified sequentially via Crossref/DataCite),"Spatial estimation of standardized precipitation index based drought severity"
+karkinli2025,ok (verified sequentially via Crossref/DataCite),"Multi-scale remote sensing of desertification trends"
+taskanat2026b,ok (verified sequentially via Crossref/DataCite),"Modeling Salinity-Vegetation Interaction in Semi-Arid Areas"

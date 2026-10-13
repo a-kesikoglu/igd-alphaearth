@@ -1,0 +1,21 @@
+,test,repr,Cropland,Woodland,Shrubland,Grassland,Bare land
+Cropland,ES_holdout,S2-seasonal,0.572,0.032,0.055,0.186,0.155
+Woodland,ES_holdout,S2-seasonal,0.011,0.694,0.208,0.077,0.01
+Shrubland,ES_holdout,S2-seasonal,0.024,0.222,0.526,0.146,0.082
+Grassland,ES_holdout,S2-seasonal,0.153,0.06,0.144,0.516,0.126
+Bare land,ES_holdout,S2-seasonal,0.106,0.001,0.05,0.035,0.807
+Cropland,ES_holdout,AE,0.625,0.022,0.065,0.117,0.172
+Woodland,ES_holdout,AE,0.006,0.759,0.161,0.065,0.009
+Shrubland,ES_holdout,AE,0.008,0.156,0.647,0.148,0.041
+Grassland,ES_holdout,AE,0.086,0.053,0.129,0.588,0.145
+Bare land,ES_holdout,AE,0.099,0.0,0.018,0.032,0.85
+Cropland,EL_transfer,S2-seasonal,0.205,0.167,0.209,0.388,0.031
+Woodland,EL_transfer,S2-seasonal,0.02,0.669,0.132,0.177,0.001
+Shrubland,EL_transfer,S2-seasonal,0.018,0.311,0.454,0.203,0.014
+Grassland,EL_transfer,S2-seasonal,0.1,0.046,0.258,0.581,0.014
+Bare land,EL_transfer,S2-seasonal,0.279,0.062,0.26,0.296,0.103
+Cropland,EL_transfer,AE,0.434,0.172,0.119,0.239,0.036
+Woodland,EL_transfer,AE,0.005,0.779,0.18,0.036,0.0
+Shrubland,EL_transfer,AE,0.002,0.303,0.65,0.044,0.001
+Grassland,EL_transfer,AE,0.152,0.061,0.321,0.455,0.01
+Bare land,EL_transfer,AE,0.57,0.003,0.093,0.203,0.132

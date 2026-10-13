@@ -1,0 +1,31 @@
+{
+  "holdout_attempt": 1,
+  "n_blocks": 248,
+  "n_test_blocks": 62,
+  "n_test": 2049,
+  "n_pool_before_buffer": 6310,
+  "n_pool": 6129,
+  "removed_by_buffer": 181,
+  "min_train_test_distance_km": 5.654586788395966,
+  "test_class_counts": {
+    "Cropland": 749,
+    "Woodland": 485,
+    "Shrubland": 305,
+    "Grassland": 376,
+    "Bare land": 134
+  },
+  "pool_class_counts": {
+    "Cropland": 2226,
+    "Woodland": 1371,
+    "Shrubland": 951,
+    "Grassland": 1131,
+    "Bare land": 450
+  },
+  "greece_class_counts": {
+    "Cropland": 511,
+    "Woodland": 468,
+    "Shrubland": 205,
+    "Grassland": 545,
+    "Bare land": 56
+  }
+}

@@ -1,0 +1,42 @@
+# Frozen analysis configuration (set before any model was trained)
+ee_project: "1050064190685"      # project available to the local EE credentials
+year: 2018                        # LUCAS 2018 survey year; AE and S2 matched to it
+reference:
+  asset: "JRC/LUCAS_HARMO/COPERNICUS_POLYGONS/V1/2018"
+  filter_copernicus_cleaned: true
+  min_polygon_area_m2: 400        # at least four 10 m pixels
+  countries: {train_region: "ES", transfer_region: "EL"}
+  classes:                        # LUCAS LC1 letter group -> class name
+    B: Cropland
+    C: Woodland
+    D: Shrubland
+    E: Grassland
+    F: Bare land
+features:
+  ae_asset: "GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL"
+  s2_asset: "COPERNICUS/S2_SR_HARMONIZED"
+  cs_asset: "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED"
+  cs_band: "cs_cdf"
+  cs_threshold: 0.60
+  s2_bands: [B2, B3, B4, B5, B6, B7, B8, B8A, B11, B12]
+  scale_m: 10
+  batch_size: 400
+projection: "EPSG:3035"           # ETRS89 LAEA Europe, metric grid for blocks
+experiment:
+  budgets: [10, 25, 50, 100]
+  replicates: 20
+  holdout_block_km: 50
+  holdout_fraction: 0.25
+  holdout_seed: 2018
+  buffer_km: 5                    # training points closer than this to a test point are removed
+  block_sizes_km: [0, 10, 25, 50, 100]   # 0 = random (sample-level) split
+  ladder_budgets: [25, 100]
+  ladder_replicates: 10
+  bootstrap: 2000
+  rf: {n_estimators: 300, max_features: "sqrt", min_samples_leaf: 2, class_weight: "balanced_subsample", n_jobs: -1}
+  lr: {C: 1.0, max_iter: 3000}
+representations:
+  S2-annual: s2a
+  S2-seasonal: s2s
+  AE: ae
+  AE+S2-seasonal: ae_s2s
